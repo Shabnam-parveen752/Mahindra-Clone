@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:  rgb(53, 52, 52);
+}
+
+section {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Nav start */
+nav {
+  height: 150px;
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: space-between; 
+  background-color: rgb(53, 52, 52);
+  padding: 0 50px;
+  box-sizing: border-box;
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 20px; 
+}
+
+.nav-center img {
+  height: 45px;
+  transform: scaleX(1.1);
+  margin-left: 200px;
+}
+
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  font-size: 1.3rem;
+}
+
+nav h3 {
+  font-size: 1.2rem;
+  /* cursor: pointer; */
+}
+
+.bi {
+  font-size: 1.5rem;
+  /* cursor: pointer; */
+}
+
+/* From Uiverse.io by satyamchaudharydev */ 
+button {
+  --primary-color: #ff0000;
+  --secondary-color: #fff;
+  --hover-color: #111;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  padding: 1em 1.8em;
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.2s background;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+}
+
+button .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+button .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+button:hover {
+  background-color: var(--hover-color);
+}
+
+button:hover .arrow {
+  background: var(--secondary-color);
+}
+
+button:hover .arrow:before {
+  right: 0;
+}
+
+.menu{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* Nav end */
+
+/* Main video */
+
+video{
+    width: 100%;
+}
+
+.sub-text{
+    width: 100%;
+  display: flex;
+  
+  
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-basis: 21%;
+  gap: 20px;
+
+}
+
+.sub-text>img{
+    width: 100%;
+}
+
+.sub-text h3{
+    color: rgb(255, 255, 255);
+  font-size: 2.5rem;
+  position: absolute;
+  z-index: 1;
+  font-family: Sanseriffic;
+  justify-content: center;
+  
+  text-align: center;
+    padding: 0 100px;
+  
+  
+}

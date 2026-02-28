@@ -1,0 +1,105 @@
+@font-face{
+  font-family: square_sans_serif_7;
+  src : url(Assests/fonts/square_sans_serif_7.ttf)
+}
+@font-face{
+  font-family:Sanseriffic;
+  src:url(Assests/fonts/Sanseriffic.otf)
+}
+/* html */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+section {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Nav bar Start */
+nav {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  background-color: crimson;
+  padding: 0 50px; 
+}
+
+
+nav > img {
+  height: 55%;
+  transform: scaleX(1.1);
+}
+
+
+.nav-left {
+  margin-right: 250px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  gap: 40px; 
+  /* flex: 1;  */
+}
+
+
+.nav-left > a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 500;
+  
+}
+
+.nav-right{
+    margin-right: 20px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  gap: 40px; 
+}
+
+ .nav-right>.bi{
+    color: white;
+    font-size: 20px;
+ }
+ 
+ /* Nav end */
+
+ .main-img>img{
+    width: 100%;
+
+ }
+
+ .About{
+    width: 100%;
+    display:contents;
+    flex: content;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(232, 221, 221);
+    padding-top: 70px;
+    
+ }
+
+ .About>h2{
+    color:crimson;
+    padding-top: 30px;
+ }
+
+ .About>p{
+    text-align: center;
+    padding: 0 300px;
+ }
+ .About>img{
+    width: 80%;
+    padding-top: 30px;
+    
+ }

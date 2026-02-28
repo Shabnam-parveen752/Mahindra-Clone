@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+section {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Nav start */
+nav {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  background-color: rgb(0, 0, 0);
+  padding: 0 50px;
+  box-sizing: border-box;
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 250px; 
+}
+
+.nav-left img {
+  height: 45px;
+  transform: scaleX(1.1);
+}
+
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  font-size: 1.3rem;
+}
+
+nav h3 {
+  font-size: 1.2rem;
+  /* cursor: pointer; */
+}
+
+.bi {
+  font-size: 1.5rem;
+  /* cursor: pointer; */
+}
+/* Nav end */
+
+.Gallery{
+  width: 100%;
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-basis: 21%;
+  gap: 20px;
+  
+  
+
+}
+.Gallery h2{
+    color: white;
+    padding-right: 70%;
+}
+
+.Gallery-img{
+   margin-left: 50px;
+   margin-right: 50px;
+}
+.Gallery-img p{
+  color: white;
+  margin-left: 130px;
+}
+
+/* Line 1 and button  */
+
+.buttons{
+  width: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 30px;
+}
+
+.button1 {
+  line-height: 1;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 10rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 1px white solid;
+  transition: background-color 0.3s;
+}
+
+.button1__icon-wrapper {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  color: #000;
+  background-color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+
+}
+
+.button1:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.button1:hover .button1__icon-wrapper {
+  color: #fff;
+  background-color: #000;
+}
+
+.button1__icon-svg--copy {
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+
+.button1:hover .button1__icon-svg:first-child {
+  transition: transform 0.3s ease-in-out;
+  transform: translate(150%, -150%);
+}
+
+.button1:hover .button1__icon-svg--copy {
+  transition: transform 0.3s ease-in-out 0.1s;
+  transform: translate(0);
+}
+
+/* Book now  */
+
+ 
+.animated-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.50rem;
+  padding: 0.10rem 1.4rem;   /* reduced height — was 0.75rem 1.5rem */
+  border: 1px solid white;
+  border-color: transparent;
+  font-size: 16px;
+  background-color: inherit;
+  border-radius: 10rem;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 0 0 2px rgb(255, 255, 255);
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+
+
+
+.animated-button svg {
+  position: absolute;
+  width: 20px;
+  fill: rgb(255, 255, 255);
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height:20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: #212121;
+  border-radius: 100px;
+}
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+  fill: #212121;
+}
+
+.animated-button:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px rgb(0, 0, 0);
+}
+
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+
+/* Media  */
+
+
+.media{
+  margin-top:5% ;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items:center;
+  margin-bottom: 30px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  
+
+}
+/* From Uiverse.io by rahulgarg99 */ 
+.button1 {
+  line-height: 1;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 10rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.button1__icon-wrapper {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  color: #000;
+  background-color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  
+}
+
+.button1:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.button1:hover .button1__icon-wrapper {
+  color: #fff;
+  background-color: #000;
+}
+
+.button1__icon-svg--copy {
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+
+.button1:hover .button1__icon-svg:first-child {
+  transition: transform 0.3s ease-in-out;
+  transform: translate(150%, -150%);
+}
+
+.button1:hover .button1__icon-svg--copy {
+  transition: transform 0.3s ease-in-out 0.1s;
+  transform: translate(0);
+}
+
+.logo{
+  padding-left: 70px;
+  
+  
+}
+.logo {
+  color: #fff;
+  margin-top: 20px;
+  
+}
+
+ .media-icon {
+  color: #fff;
+  margin-left: 1000px;
+ }
+
+ .media-icon> .bi{
+  margin-top: 30px;
+    color: #fff;
+    gap: 20px;
+      
+ }

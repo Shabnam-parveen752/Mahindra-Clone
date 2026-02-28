@@ -1,0 +1,149 @@
+
+@font-face{
+  font-family: Plane Crash;
+  src : url(Assests/fonts/Plane\ Crash.ttf)
+}
+@font-face{
+  font-family:Beckman-FREE;
+  src:url(Assests/fonts/Beckman-FREE.otf)
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+section {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Nav start */
+nav {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  background-color: rgb(0, 0, 0);
+  padding: 0 50px;
+  box-sizing: border-box;
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 80px; 
+}
+
+.nav-left img {
+  height: 45px;
+  transform: scaleX(1.1);
+}
+
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  
+  gap: 70px;
+  font-size: 1.3rem;
+  height: 70px;
+  background-color: crimson;
+}
+
+nav h3 {
+  font-size: 1.2rem;
+
+  /* cursor: pointer; */
+}
+
+.bi {
+  font-size: 1.5rem;
+  /* cursor: pointer; */
+}
+
+/* nav end */
+
+.main-img>img{
+    width: 100%;
+
+}
+
+
+/* sub-img */
+.sub-img{
+    width: 100%;
+    display: flex;
+    padding: 30px 80px;
+}
+
+.sub-left>h4{
+    font-family:Beckman-FREE;
+    padding-top:100px ;
+    font-size: 1.5rem;
+    color: red;
+}
+.sub-left>h2{
+    font-size: 2.3rem;
+    font-family: Plane Crash;
+    color: rgb(0, 0, 0);
+}
+.btn {
+ width: 7em;
+ height: 2.3em;
+ margin: 0.5em;
+ background: rgb(255, 0, 0);
+ color: white;
+ border: none;
+
+ font-size: 20px;
+ font-weight: bold;
+ cursor: pointer;
+ position: relative;
+ z-index: 1;
+ overflow: hidden;
+}
+
+button:hover {
+ color: black;
+}
+
+button:after {
+ content: "";
+ background: rgb(237, 85, 85);
+ position: absolute;
+ z-index: -1;
+ left: -20%;
+ right: -20%;
+ top: 0;
+ bottom: 0;
+ transform: skewX(-45deg) scale(0, 1);
+ transition: all 0.5s;
+}
+
+button:hover:after {
+ transform: skewX(-45deg) scale(1, 1);
+ -webkit-transition: all 0.5s;
+ transition: all 0.5s;
+}
+
+.sub-right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.sub-right>img{
+    width: 80%;
+    height: 90%;
+}

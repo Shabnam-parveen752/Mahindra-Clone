@@ -1,0 +1,200 @@
+@font-face{
+  font-family: square_sans_serif_7;
+  src : url(Assests/fonts/square_sans_serif_7.ttf)
+}
+
+@font-face{
+  font-family:Yhura Freefont;
+  src:url(Assests/fonts/Yhura\ Freefont.ttf)
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+nav {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  
+  padding: 0 50px; 
+  background-image: radial-gradient(rgb(0, 0, 0));
+  
+  
+}
+
+
+nav > img {
+  height: 95%;
+  transform: scaleX(1.1);
+  
+}
+
+/* nav left start */
+.nav-left{
+    display: flex;
+    justify-content: center;
+   gap: 50px;
+   margin-right: 400px;
+
+   
+}
+
+.nav-left > a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 500;
+  
+}
+
+.nav-left>a:hover{
+  color: red;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+  border-bottom: 2px solid red;
+  
+ }
+ .nav-left>svg:hover{
+  color: red;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+ }
+
+ /* nav left end  */
+
+ /* nav Right start */
+
+/* From Uiverse.io by TISEPSE */ 
+
+.nav-right { 
+  display:flex; 
+  justify-content:center; 
+  align-items:center;
+  gap: 30px; 
+}
+
+.nav-right .nav-btn {
+  position: relative;
+  display: inline-block;
+  padding: 8px 30px;
+  border: 2px solid #fefefe;
+  text-transform: uppercase;
+  color: #fefefe;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+
+.nav-right .nav-btn::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - 12px);
+  background-color: #212121;
+  transition: 0.3s ease-in-out;
+  transform: scaleY(1);
+}
+
+.nav-right .nav-btn:hover::before  {
+  transform: scaleY(0);
+}
+
+.nav-right .nav-btn::after  {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: -2px;
+  height: calc(100% + 4px);
+  width: calc(100% - 12px);
+  background-color: #212121;
+  transition: 0.3s ease-in-out;
+  transform: scaleX(1);
+  transition-delay: 0.5s;
+}
+
+.nav-right .nav-btn:hover::after {
+  transform: scaleX(0);
+}
+
+.nav-right .nav-btn span {
+  position: relative;
+  z-index: 3;
+}
+
+.nav-right> button {
+  background-color: none;
+  text-decoration: none;
+  background-color: #212121;
+  border: none;
+}
+
+.nav-right>.bi{
+  color: #fff;
+  font-size: 25px;
+}
+/* Button End */
+
+.main-img{
+  width: 100%;
+}
+
+.main-img>img{
+  width: 100%;
+}
+
+.sub-img{
+  
+  
+  width: 100%;
+  height: 100vh;
+  background-image: radial-gradient(gray,black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom:1px #fff  solid;
+
+}
+
+.sub-img>.main{
+  margin-top: 30px;
+  margin-right: 20px;
+
+  border-radius: 15px;
+  height: 400px;
+  gap: 20px;
+}
+.sub-img>img{
+  margin-top: 220px;
+  border-radius: 15px;
+  margin-right: 100px;
+}
+
+.sub-text>h2{
+  font-size: 6rem;
+  color: #fff;
+  margin-bottom: 30px;
+  margin-right: 30px;
+  font-family:square_sans_serif_7 ;
+}
+
+.sub-text>p{
+  color: #fff;
+  font-family: Yhura Freefont;
+  font-size: 1  .5rem;
+}
